@@ -1,0 +1,1 @@
+<?php print ('お名前： '. htmlspecialchars($_POST['my_name'],ENT_QUOTES)); ?> 
