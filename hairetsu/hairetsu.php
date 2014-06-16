@@ -4,7 +4,7 @@
 			<dd>
 
 				<?php
-					&items = array('a-1' => 'ガム', 'b-1' => 'チョコレート', 'c-3' => 'クッキー');
+					$items = array('a-1' => 'ガム', 'b-1' => 'チョコレート', 'c-3' => 'クッキー');
 
 					foreach ($items as $itemKey => $itemValue) 
 					{
