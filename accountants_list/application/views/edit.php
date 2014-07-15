@@ -16,6 +16,27 @@
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		color: #4F5155;
 	}
+	
+	.table_style{
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	}
+	.table_style th{
+	padding: 1px; text-align: left;
+	vertical-align: top;
+	color: #666666;
+	background: url(bg.jpg) repeat-x top left #eee;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+	}
+	.table_style td{
+	padding: 1px;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+	}
 
 	a {
 		color: #003399;
@@ -80,7 +101,7 @@
 
 	<div id="body">
     <form id="form1" name="form1" method="post" action="update">
-    <table width="100%" border="1">
+    <table width="100%" class="table_style">
   <tr>
   	<?php foreach ($records as $row): ?>
     <th scope="row">ID</th>

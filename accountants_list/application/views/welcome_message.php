@@ -47,6 +47,27 @@
 	#body{
 		margin: 0 15px 0 15px;
 	}
+	.table_style{
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	}
+	.table_style th{
+	padding: 1px; text-align: left;
+	vertical-align: top;
+	color: #666666;
+	background: url(bg.jpg) repeat-x top left #eee;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+	}
+	.table_style td{
+	padding: 1px;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+	}
+	
 	
 	p.footer{
 		text-align: right;
@@ -70,7 +91,7 @@
 
 	<div id="body">
 		
-		<table width="90%" border="1">
+		<table width="90%" class="table_style">
   <tr>
 
     <th scope="col">ID</th>

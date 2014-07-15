@@ -47,6 +47,7 @@
 	#body{
 		margin: 0 15px 0 15px;
 	}
+
 	
 	p.footer{
 		text-align: right;
@@ -72,7 +73,7 @@
 	<div id="body">
 		
 		<form id="form1" name="form1" method="post" action="index.php/welcome/search">
-			<table width="90%" border="1">
+			<table width="90%">
 				<tr>
 					<th colspan="2" scope="row">税理士検索</th>
 				</tr>
