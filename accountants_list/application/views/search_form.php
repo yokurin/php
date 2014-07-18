@@ -63,6 +63,17 @@
 		border: 1px solid #D0D0D0;
 		-webkit-box-shadow: 0 0 8px #D0D0D0;
 	}
+	.table_sty{
+	width: 50%;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 25px 10px 10px 10px;
+	}
+	.table_sty th{
+	
+	}
 	</style>
 </head>
 <body>
@@ -71,17 +82,17 @@
 	<h1>税理士管理サイト</h1>
 
 	<div id="body">
-		
+		<div align="center">	
 		<form id="form1" name="form1" method="post" action="index.php/welcome/search">
-			<table width="90%">
+		
+			<table class="table_sty">
 				<tr>
 					<th colspan="2" scope="row">税理士検索</th>
 				</tr>
 				<tr>
-					<th scope="row">検索文字</th>
-					<td><label for="search"></label>
-						<input name="search" type="text" id="search" size="40"/>
-					</td>
+					<th><label for="search"></label>
+						<input name="search" type="text" id="search" size="40" placeholder="検索文字（フリーワード）"/>
+					</th>
 				</tr>
 				<tr>
 					<th colspan="2" scope="row">
@@ -89,7 +100,7 @@
 					</th>
 				</tr>
 		</form>
-	
+		</div>
 	<br />	
 		
 	</div>

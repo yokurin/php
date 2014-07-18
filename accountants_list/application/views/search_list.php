@@ -117,7 +117,9 @@
 	<td><?=date('Y') - $row['birthday']?></td>
 	<td><?=$row['tokui_bun']?></td>	
 	<td><?=$row['near_st']?></td>
-		
+	<td><form action="./allview" method="post"><input type="submit" value="詳細"><input type="hidden" name="id" value="<?=$row['id']?>"></form>
+		<form action="./edit" method="post"><input type="submit" id="button" value="編集"><input type="hidden" name="id" value="<?=$row['id']?>"></form>
+	</td>
 	</tr>
 	<?php endforeach; ?>
 

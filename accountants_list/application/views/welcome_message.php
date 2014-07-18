@@ -67,6 +67,12 @@
 	border-bottom: 1px dotted #999;
 	border-left: 1px solid #ccc;
 	}
+	.table_style tr:nth-child(2n) {    /* 偶数行 */
+   	background-color: white;
+	}
+	.table_style tr:nth-child(2n+1) {  /* 奇数行 */
+   	background-color: #F8F8FF;
+	}
 	
 	
 	p.footer{
@@ -117,7 +123,8 @@
 	<td><?=$row['tokui_bun']?></td>	
 	<td><?=$row['near_st']?></td>
 	<td><form action="index.php/welcome/allview" method="post"><input type="submit" value="詳細"><input type="hidden" name="id" value="<?=$row['id']?>"></form>
-		<form action="index.php/welcome/edit" method="post"><input type="submit" id="button" value="編集"><input type="hidden" name="id" value="<?=$row['id']?>"></form></td>		
+		<form action="index.php/welcome/edit" method="post"><input type="submit" id="button" value="編集"><input type="hidden" name="id" value="<?=$row['id']?>"></form>
+	</td>		
 	</tr>
 	<?php endforeach; ?>
 
